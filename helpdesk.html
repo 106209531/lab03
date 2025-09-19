@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Demonstrates some basic HTML form elements" />
+    <meta name="keywords" content="HTML, Form, tags" />
+    <meta name="author" content="A Lecturer"  />
+    <title>CWA Help Desk Appointment</title>
+</head>
+<body>
+    <a href="http://www.swin.edu.au" target="_blank">
+    <img src="logo.png" alt="Clickable Image">
+    </a>
+
+<h1>CWA Help Desk Appointment</h1>
+<p>The Help Desk is allocated in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+<p>Check Blackboard for when CWA tutors will be there.</p>
+
+<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+	<!--Note we have to use a special escape character to print an apostrophe on the Web page -->
+	</p>
+	<fieldset>
+		<legend>Student details</legend>
+		<p><label for="studentid">Student ID</label> 
+			<input type="text" name= "studentid" id="studentid" maxlength="10" size="10" required="required"/>
+        <p><label for="givenname">Given Name</label> 
+			<input type="text" name= "givenname" id="givenname" maxlength="15" size="10" required="required"/>
+            <label for="familyname">Family Name</label>
+            <input type="text" name="familyname" id="familyname" maxlength="15" size="10"
+            required="required"/>
+		</p>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your unit</legend>
+        <p><label for="COS10011">COS10011</label> 
+				<input type="radio" id="COS10011" name="COS10011" value="COS10011"/>
+            <label for="COS60004">COS60004</label>
+                <input type="radio" id="COS60004" name="COS60004" value="COS60004"/>
+            <label for="COS60007">COS60004</label>
+                <input type="radio" id="COS60007" name="COS60007" value="COS60007"/>
+        </p>
+        <p><label for="yourtutor">Your tutor</label> 
+			<select name="yoututor" id="yourtutor">
+                <option value="">Please Select</option>
+				<option value="mrtony">Mr Tony</option>			
+				<option value="mrmark">Mr Mark</option>
+				<option value="mrslan">Mrs Lan</option>
+				<option value="mrhai">Mr Hai</option>
+				
+			</select>
+		</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Issue</legend>
+        <p><label for="HTML">HTML</label>
+                <input type="checkbox" id="HTML" name="HTML" value="HTMl">
+            <label for="CSS">CSS</label>
+                <input type="checkbox" id="CSS" name="CSS" value="CSS">
+            <label for="JavaScript">JavaScript</label>
+                <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+            <label for="PHP">JavaScript</label>
+                <input type="checkbox" id="PHP" name="PHP" value="PHP">
+            <label for="MySQL">MySQL</label>
+                <input type="checkbox" id="MySQL" name="MySQL" value="MySQL">
+        </p>
+        <p>
+            <label for="comments">Comments</label>
+			<textarea id="comments" name="comments" placeholder="Write description of your problem here..." rows="6" cols="30"></textarea>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferred Date/Time</legend>
+        <p><label for="date">Date</label> 
+			<input type="date" name= "date" id="date" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
+		</p>
+        <p><label for="time">Time</label>
+            <input type="time" name="time" id="time" placeholder="00:00" maxlength="10" size="10">
+
+        </p>
+    </fieldset>
+
+</form>
+</body>
+</html>
